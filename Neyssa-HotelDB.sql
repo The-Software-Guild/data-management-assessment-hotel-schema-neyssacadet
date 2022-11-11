@@ -53,13 +53,3 @@ CREATE TABLE room_amenities (
     CONSTRAINT FOREIGN KEY (Amenities_ID)REFERENCES Amenities (Amenities_ID),
     PRIMARY KEY (Room_ID, Amenities_ID)
 );
-
--- allows to check for Jeremiah's guest ID 
-SELECT * FROM guests
-WHERE FirstName ='Jeremiah' AND LastName = 'Pendergrass';
--- deletes from reservation 
-DELETE FROM reservations
-WHERE Guest_ID = 228;
--- deletes from guests 
-DELETE FROM guests
-WHERE Guest_ID = 228;
